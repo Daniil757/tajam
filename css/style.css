@@ -945,6 +945,7 @@ html {
   height: 100%;
   font-size: 10px;
   width: 100vw;
+  scroll-behavior: smooth;
 }
 
 /* полоса прокрутки (скроллбар) */
@@ -1158,6 +1159,8 @@ html {
 
 .screen__btn {
   margin-top: 5rem;
+  position: relative;
+  z-index: 10;
 }
 
 .btn {
@@ -1720,7 +1723,7 @@ html {
 }
 
 .reviews__avatar.active {
-  transform: scale(1.4);
+  transform: scale(1.2);
   transition: all 0.3s ease;
 }
 
@@ -1925,10 +1928,6 @@ html {
 
 .row-3 {
   padding-top: 5rem;
-}
-
-.row-3 .nav__list {
-  margin: 0 auto;
 }
 
 .copyright {
@@ -2654,6 +2653,10 @@ html {
     width: 100%;
   }
 
+  .row-3 .nav__list {
+    margin: 0 auto;
+  }
+
   .copyright {
     text-align: center;
   }
@@ -2808,7 +2811,7 @@ html {
 
 @media (orientation: landscape) and (max-width: 767px) {
   .header {
-    min-height: 100vh;
+    min-height: calc(100vh + 10px);
     box-sizing: content-box;
   }
 }
@@ -2899,7 +2902,7 @@ html {
 
   .review__item {
     text-align: justify;
-    width: 90%;
+    width: 93%;
   }
 
   .reviews__autors {
@@ -3059,10 +3062,6 @@ html {
   .reviews {
     height: 100vh;
     min-height: 400px;
-  }
-
-  .review__item {
-    width: 95%;
   }
 }
 
