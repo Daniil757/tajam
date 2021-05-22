@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const headerNav = document.querySelector('.header__nav')
   const headerBurger = document.querySelector('.header__burger')
+  const headerLinks = document.querySelectorAll(".header__link")
 
   const videoPlay = document.getElementById("video__play")
   const videoBlock = document.getElementById("videoBlock")
@@ -30,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const autors = document.querySelectorAll(".autor")
   let currentReview = 2;
 
+  // меню бургер
   headerBurger.addEventListener('click', () => {
     if (Array.from(headerBurger.classList).indexOf('active') != -1) {
       headerBurger.classList.remove('active')
@@ -40,6 +42,17 @@ document.addEventListener("DOMContentLoaded", () => {
       headerNav.classList.add('active')
       body.classList.add('lock')
     }
+  })
+
+  // плавная прокрутка
+  headerLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      let id = link.getAttribute("href").slice(1)
+      scrollSmooth(document.getElementById(id))
+      headerBurger.classList.remove('active')
+      headerNav.classList.remove('active')
+      body.classList.remove('lock')
+    })
   })
 
   // просмотр видео
@@ -78,7 +91,14 @@ document.addEventListener("DOMContentLoaded", () => {
       item.classList.add('active')
     })
   })
+
 })
 
-
+const scrollSmooth = el => {
+  window.scroll({
+    left: 0,
+    top: el.offsetTop,
+    behavior: 'smooth'
+  })
+}
 
