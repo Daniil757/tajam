@@ -955,14 +955,14 @@ html {
 }
 
 .title {
-  font-size: 22px;
+  font-size: 2.2rem;
   font-family: "Playfair Display";
   font-weight: bold;
   padding-bottom: 10px;
 }
 
 .subtitle {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-family: "Playfair Display";
   position: relative;
 }
@@ -1026,7 +1026,7 @@ html {
 }
 
 .header__nav.active .header__list .header__link {
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .nav__list {
@@ -1044,7 +1044,7 @@ html {
   text-decoration: none;
   transition: all 0.3s ease;
   font-weight: 900;
-  font-size: 13px;
+  font-size: 1.3rem;
 }
 
 .nav__link:hover {
@@ -1067,7 +1067,7 @@ html {
 .header__logo h2 {
   color: #00e0d0;
   font-weight: 100;
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 .header__logo svg {
@@ -1137,7 +1137,7 @@ html {
 .screen__title {
   font-family: "Playfair Display";
   font-weight: 900;
-  font-size: 32px;
+  font-size: 3.2rem;
   margin-bottom: 25px;
 }
 
@@ -1151,7 +1151,7 @@ html {
 }
 
 .screen__description {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 300;
   width: 70%;
   margin: 0 auto;
@@ -1165,9 +1165,9 @@ html {
 
 .btn {
   font-weight: 600;
-  font-size: 16px;
-  max-height: 40px;
-  padding: 20px;
+  font-size: 1.6rem;
+  max-height: 4rem;
+  padding: 2rem;
   background: none;
   border: 1.5px solid #00e0d0;
   border-radius: 5px;
@@ -1178,7 +1178,9 @@ html {
 }
 
 .our__story {
-  height: 405px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
 }
 
 .story .container {
@@ -1200,14 +1202,13 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding: 40px 0;
   gap: 1.2rem;
 }
 
 .story__col2 .btn {
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 
 .story__col2 p {
@@ -1217,11 +1218,10 @@ html {
 .story__title {
   font-family: "Playfair Display";
   font-weight: 700;
-  font-size: 22px;
 }
 
 .story__desc {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 300;
   color: #413d4bbd;
 }
@@ -1376,7 +1376,9 @@ html {
 }
 
 .expertise {
-  height: 100vh;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   width: 100%;
   background-color: #fff;
 }
@@ -1403,7 +1405,7 @@ html {
 
 .expertise__items .col-xs-4 {
   box-sizing: border-box;
-  padding: 4rem 5rem;
+  padding: 40px 50px;
 }
 
 .expertise__items .col-xs-4 {
@@ -1435,17 +1437,19 @@ html {
 
 .expertise__item_title {
   font-weight: 900;
-  font-size: 14px;
+  font-size: 1.4rem;
   padding: 30px 0 20px;
 }
 
 .expertise__item_desc {
   color: rgba(51, 51, 51, 0.749);
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 .team {
-  height: 100vh;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   background: url("../img/teamBG.png") center/cover no-repeat;
   position: relative;
 }
@@ -1515,12 +1519,14 @@ html {
 
 .team__desc {
   padding: 7rem 0 3rem;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #f3f3f3;
 }
 
 .works {
-  height: 100vh;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
 }
 
 .works .container {
@@ -1544,7 +1550,7 @@ html {
 
 .works__link {
   color: #413d4b;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 .works__link img {
@@ -1627,7 +1633,9 @@ html {
 
 .reviews {
   background: url("../img/reviewsBG.png") center/cover;
-  height: 500px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   position: relative;
 }
 
@@ -1658,9 +1666,9 @@ html {
 
 .reviews__title {
   font-family: "Playfair Display";
-  font-size: 100px;
+  font-size: 10rem;
   color: #fff;
-  padding: 0;
+  padding: 0 0 2rem;
   margin: 0;
   line-height: 0.6;
 }
@@ -1671,7 +1679,7 @@ html {
 
 .review__item {
   font-family: "Playfair Display";
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #fff;
   width: 75%;
   margin: -3rem auto 0;
@@ -1686,7 +1694,7 @@ html {
 }
 
 .autor {
-  margin: -3rem auto 0;
+  margin: 1rem auto;
   position: absolute;
   left: -100%;
 }
@@ -1706,7 +1714,7 @@ html {
 .autor__work {
   font-weight: 300;
   color: rgba(255, 255, 255, 0.7);
-  font-size: 13px;
+  font-size: 1.3rem;
 }
 
 .reviews__avatar {
@@ -1729,7 +1737,9 @@ html {
 
 .contacts {
   width: 100%;
-  height: 100vh;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
 }
 
 .contacts .container {
@@ -1752,7 +1762,6 @@ html {
   row-gap: 1em;
   margin: 0 auto;
   height: 100%;
-  padding-bottom: 5rem;
 }
 
 .form__block textarea {
@@ -1766,25 +1775,25 @@ html {
 
 .form__control {
   width: 100%;
-  padding: 20px;
+  padding: 2rem;
   border: 1px solid rgba(65, 61, 75, 0.502);
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 .form__control::-moz-placeholder {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-family: "Roboto";
   color: rgba(65, 61, 75, 0.502);
 }
 
 .form__control:-ms-input-placeholder {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-family: "Roboto";
   color: rgba(65, 61, 75, 0.502);
 }
 
 .form__control::placeholder {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-family: "Roboto";
   color: rgba(65, 61, 75, 0.502);
 }
@@ -1799,11 +1808,12 @@ html {
   width: -moz-max-content;
   width: max-content;
   margin: 0 auto;
-  margin-bottom: 20px;
 }
 
 .footer {
-  height: 400px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   overflow: hidden;
   width: 100%;
   background: url("../img/footerBG.png") center/cover;
@@ -1836,7 +1846,7 @@ html {
 }
 
 .footer__body .row-2 .col-sm-4 p {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-family: "Roboto";
   color: white;
   line-height: 1.857;
@@ -1855,7 +1865,7 @@ html {
 .footer__subtitle {
   font-weight: 900;
   color: #fff;
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 .footer__subtitle_min {
@@ -1871,7 +1881,7 @@ html {
 .footer__title {
   color: #00e0d0;
   font-weight: 100;
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 .footer__icon {
@@ -1882,7 +1892,7 @@ html {
 
 .col-xs-10 span {
   color: #fff;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 .form__control_footer {
@@ -1932,7 +1942,7 @@ html {
 
 .copyright {
   text-align: right;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 300;
   color: #fff;
 }
@@ -2633,6 +2643,17 @@ html {
   }
 }
 
+@media (min-width: 1700px) {
+  .contacts__form {
+    max-width: 600px;
+  }
+
+  html,
+  body {
+    font-size: 15px;
+  }
+}
+
 @media (min-width: 2150px) {
   .review__item {
     left: -150%;
@@ -2781,7 +2802,7 @@ html {
   }
 
   .header__nav .header__list .header__link {
-    font-size: 20px;
+    font-size: 2rem;
   }
 
   .header__link_logo {
@@ -2893,6 +2914,10 @@ html {
   .story__col2 .btn {
     margin: 1rem auto 0;
   }
+
+  .story__title {
+    padding-top: 2rem;
+  }
 }
 
 @media (max-width: 597px) {
@@ -2986,7 +3011,7 @@ html {
 
 @media (max-width: 394px) {
   .review__items {
-    padding: 2rem 0;
+    padding: 20px 0;
     height: 260px;
   }
 }
@@ -3045,21 +3070,33 @@ html {
   .expertise {
     height: auto;
     box-sizing: content-box;
+    max-height: -webkit-max-content;
+    max-height: -moz-max-content;
+    max-height: max-content;
   }
 
   .team {
     height: auto;
     box-sizing: content-box;
+    max-height: -webkit-max-content;
+    max-height: -moz-max-content;
+    max-height: max-content;
   }
 
   .works {
     height: auto;
     box-sizing: content-box;
+    max-height: -webkit-max-content;
+    max-height: -moz-max-content;
+    max-height: max-content;
   }
 
   .contacts {
     height: auto;
     box-sizing: content-box;
+    max-height: -webkit-max-content;
+    max-height: -moz-max-content;
+    max-height: max-content;
   }
 
   .contacts__form {
