@@ -2620,6 +2620,25 @@ html {
   }
 }
 
+@media (min-width: 1380px) {
+  .works__items {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (min-width: 1690px) {
+  .review__item {
+    left: -120%;
+  }
+}
+
+@media (min-width: 2150px) {
+  .review__item {
+    left: -150%;
+  }
+}
+
 @media (max-width: 1000px) {
   .expertise__items .col-xs-4 {
     padding: 2rem 3rem;
