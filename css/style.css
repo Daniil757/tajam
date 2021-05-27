@@ -2770,7 +2770,7 @@ html {
 @media (max-width: 767px) {
   .header {
     overflow-x: hidden;
-    height: 100vh;
+    height: calc(100vh + 10px);
     top: 0;
   }
 
